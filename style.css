@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1e3c72);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    height: auto;
+    overflow-y: auto; /* Enables scrolling */
+    max-height: 90vh; /* Restricts the height for better scrolling */
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.time-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.time-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.time-block:hover {
+    transform: scale(1.02);
+}
+
+.time-block .hour {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.time-block input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.time-block input:focus {
+    outline: none;
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+.time-block button {
+    padding: 10px 20px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.time-block button:hover {
+    background-color: #2c6bdb;
+    transform: translateY(-2px);
+}
+
+.time-block button:active {
+    transform: translateY(2px);
+}
+
+.past {
+    background-color: #e0e0e0;
+}
+
+.present {
+    background-color: #ff6b6b;
+}
+
+.future {
+    background-color: #7dff7d;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+}
+
+.delete-btn {
+    background-color: red;
+}
